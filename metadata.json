@@ -1,0 +1,8 @@
+{
+  "name": "GlobalCodeTrans - 工程技术类国家与行业标准规范专业翻译与排版复现工作台",
+  "description": "专为工程技术类国家与行业强制性标准规范打造的高精度专业翻译与排版复现工作台，深度复现结构与荷载LaTeX公式、复杂多表头工程数据表、工程曲线与图表特征及规范排版公文与构造工程示意图。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

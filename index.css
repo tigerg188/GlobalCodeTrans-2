@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+/* App styles */
+
+/* GlobalCodeTrans - Engineering Standards & Codes High-Precision Reproduction Typography */
+.markdown-content,
+.markdown-content * {
+  font-style: normal;
+}
+
+/* Cambria Math Font & KaTeX Mathematical Typography */
+@font-face {
+  font-family: 'Cambria Math';
+  src: local('Cambria Math'), local('Cambria-Math');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Allow KaTeX math symbols to retain proper mathematical slant/italics */
+.markdown-content .katex,
+.markdown-content .katex * {
+  font-style: initial !important;
+}
+
+/* Cambria Math priority for all KaTeX formulas */
+.markdown-content .katex {
+  font-family: 'Cambria Math', 'KaTeX_Math', 'KaTeX_Main', 'Times New Roman', serif !important;
+  font-size: 1.04em;
+  text-rendering: optimizeLegibility;
+}
+
+.markdown-content .katex .mathnormal,
+.markdown-content .katex .mathit {
+  font-family: 'Cambria Math', 'KaTeX_Math', serif !important;
+  font-style: italic !important;
+}
+
+.markdown-content .katex .mord,
+.markdown-content .katex .mathrm,
+.markdown-content .katex .mbin,
+.markdown-content .katex .mrel,
+.markdown-content .katex .minner,
+.markdown-content .katex .mopen,
+.markdown-content .katex .mclose,
+.markdown-content .katex .mpunct {
+  font-family: 'Cambria Math', 'KaTeX_Math', 'KaTeX_Main', serif !important;
+}
+
+/* Block display formula container */
+.markdown-content .katex-display {
+  font-family: 'Cambria Math', 'KaTeX_Math', 'KaTeX_Main', 'Times New Roman', serif !important;
+  margin: 1.1em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.375rem;
+  background-color: rgba(248, 250, 252, 0.65);
+}
+
+/* Line spacing: 1.15 */
+.markdown-content {
+  line-height: 1.15 !important;
+  font-family: 'Times New Roman', 'Phetsarath OT', 'Phetsarath', 'SimSun', 'Songti SC', 'STSong', serif;
+}
+
+.markdown-content p,
+.markdown-content li,
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content blockquote,
+.markdown-content table,
+.markdown-content td,
+.markdown-content th {
+  line-height: 1.15 !important;
+}
+
+/* Headings font stack: Times New Roman (English), Phetsarath OT (Lao), SimHei (Chinese) */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+  font-family: 'Times New Roman', 'Phetsarath OT', 'Phetsarath', 'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif !important;
+}
+
+/* Lao script characters & elements */
+:lang(lo),
+.lao-text,
+[lang="lo"] {
+  font-family: 'Phetsarath OT', 'Phetsarath', 'Noto Sans Lao', sans-serif !important;
+}

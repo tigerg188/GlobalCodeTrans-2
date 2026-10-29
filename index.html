@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalCodeTrans - 工程技术类国家与行业标准规范专业翻译与排版复现工作台</title>
+    <meta name="description" content="专为工程技术类国家与行业强制性标准规范打造的高精度专业翻译与排版复现工作台，深度复现结构与荷载LaTeX公式、复杂多表头工程数据表、工程曲线与图表特征及规范排版公文与构造工程示意图。">
+    <meta property="og:title" content="GlobalCodeTrans - 工程技术类国家与行业标准规范专业翻译与排版复现工作台">
+    <meta property="og:description" content="专为工程技术类国家与行业强制性标准规范打造的高精度专业翻译与排版复现工作台，深度复现结构与荷载LaTeX公式、复杂多表头工程数据表、工程曲线与图表特征及规范排版公文与构造工程示意图。">
+    <script>
+        // Polyfill process.env for Node.js libraries like @google/genai in browser
+        window.process = window.process || { env: {} };
+    </script>
+    <style>
+        @font-face {
+            font-family: 'Phetsarath OT';
+            font-weight: 400;
+            src: local('Phetsarath OT'), local('Phetsarath-OT'), local('Phetsarath Regular'), local('Phetsarath');
+        }
+        @font-face {
+            font-family: 'Phetsarath OT';
+            font-weight: 700;
+            src: local('Phetsarath OT Bold'), local('Phetsarath-OT-Bold'), local('Phetsarath Bold');
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Times New Roman', 'Microsoft YaHei', sans-serif;
+            background-color: #F8FAFC;
+        }
+        .lao-text, :lang(lo) {
+            font-family: 'Phetsarath OT', 'Phetsarath', 'Noto Sans Lao', sans-serif;
+        }
+        /* Custom scrollbar for professional look */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root">
+        <div id="app-loading" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #475569;">
+            <div style="width: 38px; height: 38px; border: 3px solid #E2E8F0; border-top-color: #0D9488; border-radius: 50%; animation: spin 0.8s linear infinite;"></div>
+            <div style="margin-top: 16px; font-size: 14px; font-weight: 600; color: #1E293B;">GlobalCodeTrans 工作台加载中...</div>
+            <div style="margin-top: 6px; font-size: 12px; color: #94A3B8;">请稍候，正在初始化工程规范翻译与排版系统</div>
+        </div>
+        <style>
+            @keyframes spin { to { transform: rotate(360deg); } }
+        </style>
+    </div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
